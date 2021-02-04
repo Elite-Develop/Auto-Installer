@@ -4,6 +4,7 @@ from colorama import Fore, Style, init
 import os
 import subprocess
 import time
+import webbrowser
 
 init(convert=True)
 
@@ -54,3 +55,6 @@ nodejs = requests.get(nodejs_url, allow_redirects=True)
 open('nodejsinstaller.msi', 'wb').write(nodejs.content)
 #Silent install cmd = msiexec.exe /i nodejsinstaller.msi /quiet
 os.system('msiexec.exe /i nodejsinstaller.msi /quiet')
+
+
+webbrowser.open('https://elite-dev.tk/thankyou')
