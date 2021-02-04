@@ -4,7 +4,7 @@ Ever wanted one app that installs everything you'll ever need for coding in one 
 Us too, and we had enough. That's why we made Auto Installer! It will include a multitude of apps, ranging from Visual Studio Code all the way to the latest release of Python!
 It's the one stop app for everything you'll ever need!
 
-## Getting Started
+## Getting Started ##
 
 Go to the releases tab and download the latest executeable version!
 
