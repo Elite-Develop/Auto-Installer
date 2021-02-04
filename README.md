@@ -8,12 +8,15 @@ It's the one stop app for everything you'll ever need!
 
 Go to the releases tab and download the latest executeable version!
 
-
-
 ## Authors
 
 * **Mr Rin** - *Lead Developer* - [Profile](https://github.com/itsnotrin)
 * **Caz** - *Other Developer* - [Profile](https://github.com/Caz-Developer)
+
+## Packages Used
+
+* **Requests** - Used to download the installer files - [Link](https://pypi.org/project/requests/)
+* **Colorama** - Used for the nice colors - [Link](https://pypi.org/project/colorama/)
 
 ## License
 
