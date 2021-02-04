@@ -1,9 +1,11 @@
 import requests
 import colorama
-from colorama import Fore, Style
+from colorama import Fore, Style, init
 import os
 import subprocess
 import time
+
+init(convert=True)
 
 print(f"""
 {Fore.CYAN}¸„.-•~¹°”ˆ˜¨ WELCOME ¨˜ˆ”°¹~•-.„¸{Style.RESET_ALL}
@@ -13,7 +15,7 @@ print(f"""
 time.sleep(1.5)
 def nicefy_app_name(appname):
     print(f"""
-    Now Downloading {Fore.BLUE}>>{Style.RESET_ALL} '{Fore.GREEN}{appname}{Style.RESET_ALL}' {Fore.BLUE}<<{Style.RESET_ALL}
+    Now Downloading & Installing {Fore.BLUE}>>{Style.RESET_ALL} '{Fore.GREEN}{appname}{Style.RESET_ALL}' {Fore.BLUE}<<{Style.RESET_ALL}
     
     {Fore.YELLOW}Please be patient :){Style.RESET_ALL}\n\n
     """)
@@ -49,6 +51,6 @@ os.system('start pythoninstaller.exe /quiet /PrependPath')
 nicefy_app_name("NodeJS")
 nodejs_url = 'https://nodejs.org/dist/v14.15.4/node-v14.15.4-x64.msi'
 nodejs = requests.get(nodejs_url, allow_redirects=True)
-open('nodejsinstaller.msi', 'wb').write(python.content)
+open('nodejsinstaller.msi', 'wb').write(nodejs.content)
 #Silent install cmd = msiexec.exe /i nodejsinstaller.msi /quiet
 os.system('msiexec.exe /i nodejsinstaller.msi /quiet')
