@@ -57,4 +57,4 @@ open('nodejsinstaller.msi', 'wb').write(nodejs.content)
 os.system('msiexec.exe /i nodejsinstaller.msi /quiet')
 
 
-webbrowser.open('https://elite-dev.tk/thankyou')
+webbrowser.open('https://discord.gg/GJcvb9gzeg')
